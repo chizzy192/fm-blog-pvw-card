@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    color: #111111;
+    margin: auto;
+    max-width: 386px;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0px #111111;
+    border: #111111 1px solid;
+    padding: 20px;
+}
+
+section {
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    line-height: 150%;
+    height: fit-content;
+}
+.b-image img {
+    max-height:200px;
+    width: 100%; 
+    margin: 3px 0 20px 0; 
+}
+.b-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 20px 4px;
+    
+}
+
+.b-category {
+    background-color: #F4D04E;
+    padding: 4px 12px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 14px;
+    font-style: normal;
+    font-weight:800;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    margin : 8px 0 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 7px 0 9px;
+    color: #F4D04E;    
+}
+
+h1:hover, h1:focus {
+    color: #F4D04E;
+    cursor: url('/cursor.svg'), pointer;
+}
+
+.b-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B6B6B; 
+    margin: 0; 
+}
+
+.b-pfp {
+    max-width: 32px;
+    max-width: 32px;
+}
+
+.b-author{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 20px 4px;
+}
+
+.b-author p {
+    margin: auto 10px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 327px;
+        height: 501px;
+        padding: 25px 25px 20px 25px;
+    }
+    .b-image img {
+        margin: 5px 0 25px 0; 
+    }
+    h1 {
+        color: #111111;
+        font-size: 20px;
+        margin: 12px 0 14px;
+    }
+    .b-category, .b-author p {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+    p{
+        font-size: 12px;
+        margin : 10px 0 0;
+    }
+    .b-description {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+
+    section {
+        margin: 0px;
+    }
+    .b-author {
+        margin: 20px 0 0 0;
+    }
+}
