@@ -43,7 +43,7 @@ section {
 .b-content {
     display: flex;
     flex-direction: column;
-    margin: 5px 0 20px 4px;
+    margin: 5px 0 20px 0px;
     
 }
 
@@ -84,7 +84,7 @@ h1:hover, h1:focus {
 
 .b-pfp {
     max-width: 32px;
-    max-width: 32px;
+    max-height: 32px;
 }
 
 .b-author{
@@ -104,35 +104,11 @@ h1:hover, h1:focus {
 
 @media screen and (max-width: 600px) {
     main {
-        width: 327px;
-        height: 501px;
+        width: 30em;
+        height: 50em;
         padding: 25px 25px 20px 25px;
-    }
-    .b-image img {
-        margin: 5px 0 25px 0; 
     }
     h1 {
         color: #111111;
-        font-size: 20px;
-        margin: 12px 0 14px;
-    }
-    .b-category, .b-author p {
-        font-size: 12px;
-        padding: 3px 10px;
-    }
-    p{
-        font-size: 12px;
-        margin : 10px 0 0;
-    }
-    .b-description {
-        font-size: 14px;
-        margin: 0 0 10px 0;
-    }
-
-    section {
-        margin: 0px;
-    }
-    .b-author {
-        margin: 20px 0 0 0;
     }
 }
